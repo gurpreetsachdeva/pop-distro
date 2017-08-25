@@ -72,14 +72,6 @@ LANGUAGE_PKGS=\
 	gnome-getting-started-docs-it \
 	gnome-getting-started-docs-pt \
 	gnome-getting-started-docs-ru \
-	gnome-user-docs \
-	gnome-user-docs-de \
-	gnome-user-docs-es \
-	gnome-user-docs-fr \
-	gnome-user-docs-it \
-	gnome-user-docs-pt \
-	gnome-user-docs-ru \
-	gnome-user-docs-zh-hans \
 	hunspell-de-at-frami \
 	hunspell-de-ch-frami \
 	hunspell-de-de-frami \
