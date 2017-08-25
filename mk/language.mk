@@ -88,7 +88,6 @@ LANGUAGE_PKGS=\
 	hunspell-pt-pt \
 	hunspell-ru \
 	hyphen-de \
-	hyphen-en-ca \
 	hyphen-en-gb \
 	hyphen-en-us \
 	hyphen-fr \
