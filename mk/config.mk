@@ -1,12 +1,12 @@
-DISTRO_VERSION?=17.10
+DISTRO_VERSION?=16.04
 
 DISTRO_EPOCH?=$(shell date +%s)
 
 DISTRO_DATE?=$(shell date +%Y%M%d)
 
-DISTRO_NAME=Pop_OS
+DISTRO_NAME=elementary
 
-DISTRO_CODE=pop-os
+DISTRO_CODE=elementary
 
 # Include automatic variables
 include mk/automatic.mk
@@ -20,18 +20,18 @@ include mk/language.mk
 # Repositories to be present in installed system
 DISTRO_REPOS=\
 	$(UBUNTU_REPOS) \
-	ppa:system76/pop
+	ppa:elementary-os/os-patches \
+	ppa:elementary-os/stable
 
 # Packages to install
 DISTRO_PKGS=\
-	ubuntu-minimal \
-	ubuntu-standard \
-	pop-desktop
+	elementary-minimal \
+	elementary-standard \
+	elementary-desktop
 
 # Packages to have in live instance
 LIVE_PKGS=\
 	casper \
-	jfsutils \
 	linux-generic \
 	linux-signed-generic \
 	lupin-casper \
@@ -39,7 +39,6 @@ LIVE_PKGS=\
 	mtools \
 	reiserfsprogs \
 	ubiquity-frontend-gtk \
-	ubiquity-slideshow-pop \
 	xfsprogs \
 	$(LANGUAGE_PKGS)
 
