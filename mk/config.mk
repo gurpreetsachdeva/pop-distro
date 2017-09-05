@@ -20,7 +20,8 @@ include mk/language.mk
 # Repositories to be present in installed system
 DISTRO_REPOS=\
 	$(UBUNTU_REPOS) \
-	ppa:system76/pop
+	ppa:system76/pop \
+	ppa:system76/pop-staging
 
 # Packages to install
 DISTRO_PKGS=\
@@ -31,17 +32,13 @@ DISTRO_PKGS=\
 # Packages to have in live instance
 LIVE_PKGS=\
 	casper \
-	jfsutils \
+	distinst \
 	linux-generic \
 	linux-signed-generic \
 	lupin-casper \
-	mokutil \
-	mtools \
-	reiserfsprogs \
-	ubiquity-frontend-gtk \
-	ubiquity-slideshow-pop \
-	xfsprogs \
-	$(LANGUAGE_PKGS)
+	mokutil
+
+#$(LANGUAGE_PKGS)
 
 # Packages to remove from installed system (usually installed as Recommends)
 RM_PKGS=\
