@@ -33,6 +33,7 @@ DISTRO_PKGS=\
 LIVE_PKGS=\
 	casper \
 	distinst \
+	io.elementary.installer \
 	linux-generic \
 	linux-signed-generic \
 	lupin-casper \
